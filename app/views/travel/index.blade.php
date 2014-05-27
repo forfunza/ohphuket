@@ -70,24 +70,19 @@
     <li><a href="#">Job</a></li>
     <li><a href="#">Contact</a></li>
    </ul>
-   <ul class="social pull-right">
-    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-        <li>
-            <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
-                <img src="{{ asset('theme/frontend/one/images/social/') }}/{{$properties['native']}}" alt="Flickr">
-               
+     <ul class="social pull-right">
+        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+            <li>
+                <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+                    <img src="{{ asset('theme/frontend/one/images/social/') }}/{{$properties['native']}}" style="width:40px !important" alt="Flickr">
+                   
 
-            </a>
-        </li>
-    @endforeach
-</ul>
+                </a>
+            </li>
+        @endforeach
+    </ul>
     
-       
-   <!-- Social Media -->
-   <ul class="social pull-right">
-    
-     <li><a href="#" data-placement="bottom" data-original-title="Like us on Facebook"><img src="{{ asset('theme/frontend/one/images/social/infocus/facebook-logo.png') }}" alt="Facebook"></a></li>
-   </ul>
+
    
   </div> <!-- End Container -->
  </div> <!-- End Top-Navigation -->
