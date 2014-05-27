@@ -11,7 +11,23 @@
 |
 */
 
-Route::get('/', function()
+App::before(function($request)
 {
-	return View::make('hello');
+    // default browser language
+    $language = substr($request->server->get('HTTP_ACCEPT_LANGUAGE'), 0, 2);
+
+    echo $request->server->get('HTTP_ACCEPT_LANGUAGE'); exit;
+    // language set from route
+    if (null !== $request->segment(1)) {
+        $routeLanguage = $request->segment(1);
+        if (in_array($routeLanguage, Config::get('app.languages'))) {
+            $language = $routeLanguage;
+        }
+    }
+    // set the language
+    Config::set('app.locale', $language);
+    App::setLocale($language);
 });
+
+
+Route::get('/','TravelController@index');
