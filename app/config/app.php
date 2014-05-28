@@ -120,6 +120,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
+		'Potsky\LaravelLocalizationHelpers\LaravelLocalizationHelpersServiceProvider',
 
 	),
 

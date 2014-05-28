@@ -65,7 +65,7 @@
     
    <!-- Navigation -->
    <ul class="nav-menu pull-left">
-    <li class="active"><a href="index.html">Travel</a></li>
+    <li class="active"><a href="index.html">{{ trans("travel.travel") }}</a></li>
     <li><a href="#">Mall</a></li>
     <li><a href="#">Job</a></li>
     <li><a href="#">Contact</a></li>
@@ -218,12 +218,13 @@
   
     <div class="row-fluid">
    
-     <!-- One -->
+     
+    <!-- One -->
      <div class="span6 post no-margin-left">
       <figure>
        <img src="{{ asset('theme/frontend/one/images/content/600/1.jpg') }}" alt="Thumbnail 1" />
        <div class="cat-name">
-        <span class="base">Technology</span>
+        <span class="base">Trip</span>
         <span class="arrow"></span>
        </div>
       </figure>
@@ -239,7 +240,7 @@
       <figure>
        <img src="{{ asset('theme/frontend/one/images/content/600/2.jpg') }}" alt="Thumbnail 2" />
        <div class="cat-name">
-        <span class="base">Business</span>
+        <span class="base">Beach</span>
         <span class="arrow"></span>
        </div>
       </figure>
@@ -252,30 +253,16 @@
    
      <div class="clearfix ie-sep"></div> <!-- Clearfix -->
    
-     <!-- Three -->
-     <div class="span6 post no-margin-left">
-      <figure>
-       <img src="{{ asset('theme/frontend/one/images/content/600/3.jpg') }}" alt="Thumbnail 3" />
-       <div class="cat-name">
-        <span class="base">Education</span>
-        <span class="arrow"></span>
-       </div>
-      </figure>
-      <div class="text">
-       <h2><a href="single_post.html" title="View permalink House in The Woods">House in The Woods</a></h2>
-       <p>Pellentesque sed eros sit amet eros congue dium. Nullam fringilla adipiscing placerat. Mauris feugiat elit et nisi dapibus sodales. Aenean pulvinar odio non sapien tincidunt pellentesque.</p>
-       <div class="meta">By <a href="author.html">Joh Donn</a>&nbsp;&nbsp;|&nbsp;&nbsp;Jan. 12, 2013&nbsp;&nbsp;|&nbsp;&nbsp;<a href="single_post.html">12 comments</a></div>
-      </div>
-     </div>
-   
-     <!-- Review Posts -->
-     <div class="span6 home-reviews">
+     <!-- Gallery Posts -->
+     <div class="home-galleries no-margin-left">
     
       <!-- Header -->
       <div class="header">
        <div class="base">
-        <h4>Reviews</h4>
-        <a href="blog_reviews.html" title="View all reviews">more reviews....</a>
+        <h4>Beaches</h4>
+        <div class="nav-control">
+         <span class="previous"></span><span class="next"></span>
+        </div>
        </div>
        <div class="arrow arrow-left"></div>
        <div class="arrow arrow-right"></div>
@@ -283,140 +270,124 @@
     
       <!-- One -->
       <div class="item">
-       <a href="single_review.html">
-        <figure class="figure-hover">
-         <img src="{{ asset('theme/frontend/one/images/content/300/7.jpg') }}" alt="Thumbnail 1" />
-         <div class="base-val">70%</div>
-         <div class="figure-hover-masked">
-          <p class="icon-plus-small"></p>
-         </div>
-        </figure>
-       </a>
-       <div class="content">
-        <p><a href="single_review.html" title="View permalink Small Market and St. Sebastian's Square in Opole">Small Market and St. Sebastian's Square in Opole</a> <i>by mdkiwol</i></p>
-        <div class="base-rate">
-         <div class="rate-val" style="width:70%;"></div>
-        </div>
-       </div>
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/3.jpg') }}" alt="Thumbnail 1" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Small Market and St. Sebastian's Square in Opole</p>
       </div>
     
       <!-- Two -->
       <div class="item">
-       <a href="single_review.html">
-        <figure class="figure-hover">
-         <img src="{{ asset('theme/frontend/one/images/content/300/8.jpg') }}" alt="Thumbnail 2" />
-         <div class="base-val">5.5</div>
-         <div class="figure-hover-masked">
-          <p class="icon-plus-small"></p>
-         </div>
-        </figure>
-       </a>
-       <div class="content">
-        <p><a href="single_review.html" title="View permalink Living Room in Italy">Living Room in Italy</a> <i>by john</i></p>
-        <div class="base-rate">
-         <div class="rate-val" style="width:55%;"></div>
-        </div>
-       </div>
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/10.jpg') }}" alt="Thumbnail 2" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Living Room in Italy</p>
       </div>
+      
+      <div class="clearfix"></div> <!-- Clearfix -->
     
       <!-- Three -->
       <div class="item">
-       <a href="single_review.html">
-        <figure class="figure-hover">
-         <img src="{{ asset('theme/frontend/one/images/content/300/9.jpg') }}" alt="Thumbnail 3" />
-         <div class="base-val">100</div>
-         <div class="figure-hover-masked">
-          <p class="icon-plus-small"></p>
-         </div>
-        </figure>
-       </a>
-       <div class="content">
-        <p><a href="single_review.html" title="View permalink Platform House With Minimal Design">Platform House With Minimal Design</a> <i>by jagerjack</i></p>
-        <div class="base-rate">
-         <div class="rate-val" style="width:100%;"></div>
-        </div>
-       </div>
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/11.jpg') }}" alt="Thumbnail 3" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Platform House with Minimal Design</p>
       </div>
     
-     </div> <!-- End Reviews -->
+      <!-- Four -->
+      <div class="item">
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/12.jpg') }}" alt="Thumbnail 4" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Mosaic Pool is Very Amazing And Beautiful</p>
+      </div>
+    
+     </div> <!-- End Galleries -->
    
      <div class="clearfix ie-sep"></div> <!-- Clearfix -->
-   
-     <!-- Four -->
-     <div class="span6 post no-margin-left">
-      <figure>
-       <img src="{{ asset('theme/frontend/one/images/content/600/4.jpg') }}" alt="Thumbnail 4" />
-       <div class="cat-name">
-        <span class="base">Technology</span>
-        <span class="arrow"></span>
-       </div>
-      </figure>
-      <div class="text">
-       <h2><a href="single_post.html" title="View permalink Camerette - Your Time to Explore">Camerette - Your Time to Explore</a></h2>
-       <p>Sed tristique rhoncus dolor a porta. Nunc suscipit condimentum ultrices. Fusce non arcu urna. Duis iaculis tellus id felis fringilla commodo. Vivamus quet ullamcorper sagittis.</p>
-       <div class="meta">By <a href="author.html">amaah</a>&nbsp;&nbsp;|&nbsp;&nbsp;Jan. 11, 2013&nbsp;&nbsp;|&nbsp;&nbsp;<a href="single_post.html">3 comments</a></div>
-      </div>
-     </div>
-   
-     <!-- Five -->
-     <div class="span6 post">
-      <figure>
-       <img src="{{ asset('theme/frontend/one/images/content/600/5.jpg') }}" alt="Thumbnail 5" />
-       <div class="cat-name">
-        <span class="base">Business</span>
-        <span class="arrow"></span>
-       </div>
-      </figure>
-      <div class="text">
-       <h2><a href="single_post.html" title="View permalink Winter Kitchen with Silver Panorama">Winter Kitchen with Silver Panorama</a></h2>
-       <p>Fusce vehicula sapien sed dolor semper gravida. Nam mollis, nisl vel mollis condimentum, arcu lorem varius ipsum, eget vulputate nisl ligula sit amet metus. Duis ac magna neque, congue tristique risus.</p>
-       <div class="meta">By <a href="author.html">mdkiwol</a>&nbsp;&nbsp;|&nbsp;&nbsp;Jan. 10, 2013&nbsp;&nbsp;|&nbsp;&nbsp;<a href="single_post.html">3 comments</a></div>
-      </div>
-     </div>
-   
-     <div class="clearfix ie-sep"></div> <!-- Clearfix -->
-       
-     <!-- Six -->
-     <div class="span6 post no-margin-left">
-      <figure>
-       <img src="{{ asset('theme/frontend/one/images/content/600/6.jpg') }}" alt="Thumbnail 6" />
-       <div class="cat-name">
-        <span class="base">Education</span>
-        <span class="arrow"></span>
-       </div>
-      </figure>
-      <div class="text">
-       <h2><a href="single_post.html" title="View permalink Casa en la costa del uno">Casa en la costa del uno</a></h2>
-       <p>Praesent mattis mauris urna. Suspendisse vuputa, urna sit amet laoreet iaculis, magna urna porttitor justo, vel pretium sapien urpis nec turpis. Integer nec consectetur odio.</p>
-       <div class="meta">By <a href="author.html">jagerjack</a>&nbsp;&nbsp;|&nbsp;&nbsp;Jan. 9, 2013&nbsp;&nbsp;|&nbsp;&nbsp;<a href="single_post.html">3 comments</a></div>
-      </div>
-     </div>
-   
-     <!-- Seven -->
-     <div class="span6 post">
-      <figure>
-       <img src="{{ asset('theme/frontend/one/images/content/600/7.jpg') }}" alt="Thumbnail 7" />
-       <div class="cat-name">
-        <span class="base">Entertainment</span>
-        <span class="arrow"></span>
-       </div>
-      </figure>
-      <div class="text">
-       <h2><a href="single_post.html" title="View permalink Mosaic Pool is Very Amazing And Beautiful">Mosaic Pool is Very Amazing And Beautiful</a></h2>
-       <p>Pellentesque sed eros sit amet eros congue dium. Nullam fringilla adipiscing placerat. Mauris feugiat elit et nisi dapibus sodales. Aenean pulvinar odio non sapien tincidunt pellentesque.</p>
-       <div class="meta">By <a href="author.html">amaah</a>&nbsp;&nbsp;|&nbsp;&nbsp;Jan. 8, 2013&nbsp;&nbsp;|&nbsp;&nbsp;<a href="single_post.html">3 comments</a></div>
-      </div>
-     </div>
-   
-     <div class="clearfix ie-sep"></div> <!-- Clearfix -->
-   
-     <!-- Gallery Posts -->
+
      <div class="home-galleries no-margin-left">
     
       <!-- Header -->
       <div class="header">
        <div class="base">
-        <h4>Galleries</h4>
+        <h4>Restaurant</h4>
+        <div class="nav-control">
+         <span class="previous"></span><span class="next"></span>
+        </div>
+       </div>
+       <div class="arrow arrow-left"></div>
+       <div class="arrow arrow-right"></div>
+      </div>
+    
+      <!-- One -->
+      <div class="item">
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/3.jpg') }}" alt="Thumbnail 1" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Small Market and St. Sebastian's Square in Opole</p>
+      </div>
+    
+      <!-- Two -->
+      <div class="item">
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/10.jpg') }}" alt="Thumbnail 2" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Living Room in Italy</p>
+      </div>
+      
+      <div class="clearfix"></div> <!-- Clearfix -->
+    
+      <!-- Three -->
+      <div class="item">
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/11.jpg') }}" alt="Thumbnail 3" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Platform House with Minimal Design</p>
+      </div>
+    
+      <!-- Four -->
+      <div class="item">
+       <figure class="figure-overlay figure-overlay-icon">
+        <a href="single_photo.html">
+         <img src="{{ asset('theme/frontend/one/images/content/300/12.jpg') }}" alt="Thumbnail 4" />
+         <div><p class="icon-plus"></p></div>
+        </a>
+       </figure>
+       <p>Mosaic Pool is Very Amazing And Beautiful</p>
+      </div>
+    
+     </div> <!-- End Galleries -->
+   
+     <div class="clearfix ie-sep"></div> <!-- Clearfix -->
+
+     <div class="home-galleries no-margin-left">
+    
+      <!-- Header -->
+      <div class="header">
+       <div class="base">
+        <h4>Hotel</h4>
         <div class="nav-control">
          <span class="previous"></span><span class="next"></span>
         </div>
@@ -475,23 +446,7 @@
    
      <div class="clearfix ie-sep"></div> <!-- Clearfix -->
    
-     <nav class="nav-pagination">
-      <ul>
-       <li class="active"><a href="#">1</a></li>
-       <li><a href="#">2</a></li>
-       <li><a href="#">3</a></li>
-       <li><a href="#">4</a></li>
-       <li><a href="#">5</a></li>
-       <li><a href="#">6</a></li>
-       <li><a href="#">7</a></li>
-       <li><a href="#">8</a></li>
-       <li><a href="#">9</a></li>
-       <li><a href="#">10</a></li>
-       <li class="empty-space">....</li>
-       <li><a href="#">17</a></li>
-      </ul>
-      <p>Page 1 of 17</p>
-     </nav> <!-- End Nav-Pagination -->
+    
    
     </div> <!-- End Row-Fluid -->
    </div> <!-- End Main -->
@@ -759,12 +714,7 @@
   <div class="container">
    
    <p class="pull-left">Copyright 2013 OhPhuket.com&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">OhPhuket.com</a></p>
-   <ul class="social pull-right">
-    
-    
-    <li><a href="#" title="Facebook"><img src="{{ asset('theme/frontend/one/images/social/f0101/facebook.png') }}" alt="Facebook" /></a></li>
-    <li><a href="#" title="Delicious"><img src="{{ asset('theme/frontend/one/images/social/f0101/delicious.png') }}" alt="Delicious" /></a></li>
-   </ul>
+  
    
   </div> <!-- End Container -->
  </div> <!-- End Footer -->
